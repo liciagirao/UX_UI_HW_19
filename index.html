@@ -23,6 +23,68 @@
                 <h2 class="just">just</h2>
                 <h2>about books.</h2>
             </div>
+        </section>
+
+        <section class="section-aboutme">
+            <div>
+                <h1>OLÁ, HEY, HALLO!</h1>
+                    <h3>I am Licia - Librarian and UX/UI Designer. Good to have you here.</h3>
+            </div>
+
+            <div class="box-item">
+
+                <div class="story-item">
+                    <div class="circle"></div>
+                    <div class="story-accordion">
+                        <b>— 2011, Brazil: bachelor course in Library Science at Federal University of Ceará</b>
+                        <p>
+                            Personal information text personal information text personal information text personal information text personal 
+                            information text personal information text
+                        </p>
+                    </div>
+                </div>   
+                
+                <div class="story-item">
+                    <div class="circle"></div>
+                    <div class="story-accordion">
+                        <b>— 2013, Brazil: promoted from intern to Media Librarian before graduating</b>
+                        <p>
+                            She stood out as an intern and was promoted before completing her graduation, joining the staff of TV Verdes Mares, an affiliate of TV Globo, the largest commercial TV network in Latin America and the second-largest commercial TV network in the world behind the ABC . She improved her knowledge in organization systems, specialized research, database management, LATCH implementation, taxonomy studies and methodologies related to information architecture. Reached the senior experience level.
+                        </p>
+                    </div>
+                </div> 
+
+                <div class="story-item">
+                    <div class="circle"></div>
+                    <div class="story-accordion">
+                        <b>— 2018, Germany: language skills improvement and first contact with design</b>
+                        <p>
+                            After reached the senior experience level as Librarian in Brazil, she moved to Germany to learn a new language and improve her English. As she always had a creative mind and passion for design and architecture, she dedicated herself to studying SketchUp and Canva as a hobby.
+                        </p>
+                    </div>
+                </div> 
+
+                <div class="story-item">
+                    <div class="circle"></div>
+                    <div class="story-accordion">
+                        <b>— 2021, Canada: Hired as Library Services Coordinator</b>
+                        <p>
+                            In 2021 she moved to Canada and in less than 3 months she was hired by WildBrain, an award-winning animation and entertainment company. Its duties are managing the digitalization processes of physical media, maintaining the collection's database, cataloging content and metadata treatment.
+                        </p>
+                    </div>
+                </div> 
+
+                <div class="story-item">
+                    <div class="circle"></div>
+                    <div class="story-accordion">
+                        <b>— 2022, Canada: UX/UI Certification at University of Toronto</b>
+                        <p>
+                            Mixing her plenty knowledge in search engine optimization and research with her passion for design, he decided to deepen his career in the area of ​​information technology by expanding his training with a UX/UI certification from the University of Toronto.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
 
         </section>
 
@@ -30,7 +92,7 @@
             <h1>KEYWORDS</h1>
             <div class="skills-list">
                 <div class="skill-section">
-                    <h3>- Design Tools:</h3>
+                    <h3>— Design Tools:</h3>
                     <div class="skills-group">
                         <div class="skill-item">
                             <img class="skill-image" src="images\figma.png" alt="Figma icon" width="70" height="70">
@@ -52,7 +114,7 @@
                 </div>
 
                 <div class="skill-section">
-                    <h3>- Research Project Tracking:</h3>
+                    <h3>— Research Project Tracking:</h3>
                     <div class="skills-group">
                         <div class="skill-item">
                             <img class="skill-image" src="images\google_forms.png" alt="GoogleForms icon" width="70" height="70">
@@ -78,7 +140,7 @@
                 </div>
                 
                 <div class="skill-section">
-                    <h3>- Data Management:</h3>
+                    <h3>— Data Management:</h3>
                     <div class="skills-group">
                         <div class="skill-item">
                             <img class="skill-image" src="images\github.png" alt="Github icon" width="70" height="70">
@@ -96,7 +158,7 @@
                 </div>
 
                 <div class="skill-section">
-                    <h3>- Programming Languages:</h3>
+                    <h3>— Programming Languages:</h3>
                     <div class="skills-group">
                         <div class="skill-item">
                             <img class="skill-image" src="images\html.png" alt="Html icon" width="70" height="70">
@@ -149,5 +211,22 @@
     
             <p>liciagirao.com | © 2023 Licia Girão all rights reserved</p>
         </section>
+
+        <script>
+            var accordions = document.getElementsByClassName("story-accordion");
+            function animateAccordionParagraph() {                
+                var paragraph = this.lastElementChild ;
+                if (paragraph.style.maxHeight) {
+                  paragraph.style.maxHeight = null;
+                } else {
+                  paragraph.style.maxHeight = paragraph.scrollHeight + "px";
+                } 
+            }
+            
+            for (var i = 0; i < accordions.length; i++) {
+              accordions[i].addEventListener("mouseenter", animateAccordionParagraph);
+              accordions[i].addEventListener("mouseleave", animateAccordionParagraph);
+            }
+        </script>
     </body>
 </html>
