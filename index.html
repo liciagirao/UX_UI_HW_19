@@ -3,6 +3,8 @@
 <head>
     <link rel="stylesheet" href="css\index.css">
         <title>Licia Girão</title>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
     <body>
         <section class="section-home">
@@ -11,10 +13,21 @@
                 <img src="images\logo_liciagirao.png" alt="Licia Girao logo" width="132" height="97">
 
                 <ul>
-                    <li>ABOUT</li>
-                    <li>SKILLS</li>
-                    <li>PROJECTS</li>
-                    <li>TALK TO ME</li>
+                    <li>
+                        <a href="#about">ABOUT</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills">SKILLS</a>
+                    </li>
+                        
+                    <li>
+                        <a href="#projects">PROJECTS</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">TALK TO ME</a>
+                    </li>
                 </ul>
             </div>
 
@@ -25,13 +38,13 @@
             </div>
         </section>
 
-        <section class="section-aboutme">
+        <section class="section-aboutme" id="about">
             <div>
-                <h1>OLÁ, HEY, HALLO!</h1>
-                    <h3>I am Licia - Librarian and UX/UI Designer. Good to have you here.</h3>
+                <h1 class="reveal">OLÁ, HEY, HALLO!</h1>
+                <h3 class="reveal">I am Licia - Librarian and UX/UI Designer. Good to have you here.</h3>
             </div>
 
-            <div class="box-item">
+            <div class="box-item reveal">
 
                 <div class="story-item">
                     <div class="circle"></div>
@@ -88,7 +101,7 @@
 
         </section>
 
-        <section class="section-my-skills">
+        <section class="section-my-skills" id="skills">
             <h1>KEYWORDS</h1>
             <div class="skills-list">
                 <div class="skill-section">
@@ -177,7 +190,7 @@
             </div>
         </section> 
         
-        <section class="section-my-projects">
+        <section class="section-my-projects" id="projects">
             <h1>PROJECTS AND PROGRESS</h1>
             <div class="project-cards">
                 <div class="project-card">
@@ -199,6 +212,11 @@
             <div class="download-button-container">
                 <button class="download-cv-button">Download my CV</button>
             </div>
+        </section>
+
+        <section id="contact">
+            <h1>TALK TO ME</h1>
+ 
         </section>
 
         <section class="footer-section">
@@ -227,6 +245,9 @@
               accordions[i].addEventListener("mouseenter", animateAccordionParagraph);
               accordions[i].addEventListener("mouseleave", animateAccordionParagraph);
             }
+
+            ScrollReveal().reveal('.reveal', { delay: 500, reset: true });
+            
         </script>
     </body>
 </html>
