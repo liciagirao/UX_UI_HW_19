@@ -318,6 +318,29 @@ h2 {
     border: 1px solid #D07B8D;
 }
 
+/* Section contact */
+
+.section-contact {
+    padding-left: 30%;
+    display: flex;
+    flex-direction: column;
+    background: #E4B3BE;
+}
+
+.section-my-contact h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 0.11em;
+    color: #8D3245; 
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* Section footer */
 
 .footer-section {
